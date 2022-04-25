@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Tính thuế thu nhập
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="">Nhập họ và tên</label>
+                            <input type="text" id="hoTen" class="form-control" placeholder="" aria-describedby="helpId">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Tổng thu nhập</label>
+                            <input type="number" id="thuNhap" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Số người phụ thuộc</label>
+                            <input type="number" id="phuThuoc" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+                        </div>
+                        <button class="btn btn-success" id="tienThue">Tính tiền thuế</button>
+                    </div>
+                    <div id="show_1" class="card-footer text-muted">
+                        Footer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Tính tiền cáp
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for=""></label>
+                            <select id="khachHang" class="form-control" onchange="myFunction()"">
+                                <option value="">Chọn lọai khách hàng</option>
+                                <option value="1">Nhà dân</option>
+                                <option value="2">Doanh nghiệp</option>
+                            </select>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for=""></label>
+                                    <input type="text" id="maKhach" class="form-control"
+                                        placeholder="Nhập mã khách hàng" aria-describedby="helpId">
+                                    <input type="number" id="soKenh" class="form-control" placeholder="Số kênh cao cấp"
+                                        aria-describedby="helpId">
+                                    <input type="number" id="soKetNoi" class="form-control" placeholder="Số kết nối"
+                                        aria-describedby="helpId">
+                                </div>
+                                <button class="btn btn-success" id="tienCap">Tính tiền cáp</button>
+                            </div>
+                            <div id="show_2" class="card-footer text-muted">
+                                Footer
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("khachHang").value;
+            document.getElementById("doanhNghiep").innerHTML
+        }
+    </script>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

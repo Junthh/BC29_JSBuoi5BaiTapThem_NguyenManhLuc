@@ -1,0 +1,16 @@
+#khachHang{
+    display: inline-block;
+    width: 50%;
+    margin-left: 80px;
+}
+
+
+#maKhach,
+#soKenh {
+    display: inline-block;
+    width: 40%;
+}
+
+#tienCap{
+    margin-left: 120px;
+}
